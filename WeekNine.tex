@@ -1,0 +1,121 @@
+
+\documentclass{ctexart}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath}
+
+
+\setcounter{MaxMatrixCols}{10}
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.50.0.2953}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{Created=Saturday, November 14, 2015 15:32:15}
+%TCIDATA{LastRevised=Friday, January 15, 2016 23:16:38}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Blank - Standard LaTeX Article">}
+%TCIDATA{CSTFile=40 LaTeX article.cst}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+
+\begin{document}
+
+
+
+\bigskip \bigskip 统力第9周作业 \qquad 
+赵丰\qquad 2013012178
+
+5.2考虑分子内部能级时%
+总粒子数$N=\underset{i}{\sum }\frac{\omega _{i}}{%
+e^{\alpha +\beta \epsilon _{i}}-1},i$遍历所有的%
+宏观态,$N$可分为两部分,
+
+若$\epsilon _{i}\geq \epsilon _{1},$则此宏观%
+态至少包括内部粒子%
+处于激发态的情况$\implies N=%
+\underset{\epsilon _{i}<\epsilon _{1}}{\sum }\frac{\omega _{i}}{e^{\alpha
++\beta \epsilon _{i}}-1}+\underset{\epsilon _{i}\geq \epsilon _{1}}{\sum }%
+\frac{\omega _{i}}{e^{\alpha +\beta \epsilon _{i}}-1}$
+
+$\underset{\epsilon _{i}\geq \epsilon _{1}}{\sum }\frac{\omega _{i}}{%
+e^{\alpha +\beta \epsilon _{i}}-1}$ can be divided according to whether $%
+\epsilon _{1}$ is taken into account.
+
+$\implies N=N_{1}+N_{2},N_{1}$ 遍历所有基%
+态的情况,$N_{2}$ 遍历所有%
+激发态的情况
+
+由准经典近似,$N_{1}=\int_{0}^{\infty
+}g\left( \epsilon \right) \frac{d\epsilon }{e^{\alpha +\beta \epsilon }-1}%
+,N_{2}=\int_{0}^{\infty }g\left( \epsilon \right) \frac{d\epsilon }{e^{\beta
+\epsilon _{1}}e^{\alpha +\beta \epsilon }-1},$利用$g\left(
+\epsilon \right) =CV\sqrt{\epsilon }$,
+
+$C=2\pi \left( 2m\right) ^{3/2}h^{-3},\implies N=CV\left( \int_{0}^{\infty }%
+\sqrt{\epsilon }\frac{d\epsilon }{e^{\alpha +\beta \epsilon }-1}%
++\int_{0}^{\infty }\sqrt{\epsilon }\frac{d\epsilon }{e^{\beta \epsilon
+_{1}}e^{\alpha +\beta \epsilon }-1}\right) $
+
+发生Bosen-Einstein凝聚时$\mu =0\implies
+e^{\alpha }=e^{-\beta \mu }=1\implies $
+
+$z$凝结温度和能量$\epsilon _{1}$%
+的关系为$N=CV\left( \int_{0}^{\infty }\sqrt{\epsilon 
+}\frac{d\epsilon }{e^{\beta \epsilon }-1}+\int_{0}^{\infty }\sqrt{\epsilon }%
+\frac{d\epsilon }{e^{\beta \epsilon _{1}}e^{\beta \epsilon }-1}\right) $
+
+其中$\beta =\frac{1}{kT_{c}},T_{c}$为凝结%
+温度.
+
+做变量替换$x=\frac{\epsilon }{kT_{c}}$得$%
+N=CV\left( kT_{c}\right) ^{3/2}\left( \int_{0}^{\infty }\sqrt{x}\frac{dx}{%
+e^{x}-1}+\int_{0}^{\infty }\sqrt{x}\frac{dx}{e^{\beta \epsilon _{1}}e^{x}-1}%
+\right) $
+
+若不考虑内部能级$N=CV\left(
+kT_{c}^{0}\right) ^{3/2}\int_{0}^{\infty }\sqrt{x}\frac{dx}{e^{x}-1}\implies 
+$
+
+$\left( \frac{T_{c}^{0}}{T_{c}}\right) ^{3/2}=1+\frac{\int_{0}^{\infty }%
+\sqrt{x}\frac{dx}{e^{\beta \epsilon _{1}}e^{x}-1}}{\int_{0}^{\infty }\sqrt{x}%
+\frac{dx}{e^{x}-1}},$考虑到$\beta \epsilon _{1}=\frac{%
+\epsilon }{kT_{c}}>>1,$
+
+$\int_{0}^{\infty }\sqrt{x}\frac{dx}{e^{\beta \epsilon _{1}}e^{x}-1}\approx
+\int_{0}^{\infty }\sqrt{x}\frac{dx}{e^{\beta \epsilon _{1}}e^{x}}=e^{-\beta
+\epsilon _{1}}\Gamma \left( \frac{3}{2}\right) ,\implies $
+
+$\frac{T_{c}}{T_{c}^{0}}=\left( 1+\frac{e^{-\beta \epsilon _{1}}\Gamma
+\left( \frac{3}{2}\right) }{\int_{0}^{\infty }\sqrt{x}\frac{dx}{e^{x}-1}}%
+\right) ^{-2/3}\approx 1-\frac{2}{3}\frac{e^{-\beta \epsilon _{1}}\Gamma
+\left( \frac{3}{2}\right) }{\int_{0}^{\infty }\sqrt{x}\frac{dx}{e^{x}-1}},$%
+数值计算给出$e^{-\beta \epsilon _{1}}$
+
+系数为$-0.255.$\qquad 
+
+$\int_{0}^{\frac{\pi }{2}}\sin \theta \cos \theta d\theta \int_{0}^{\infty
+}v^{3}f\left( v\right) dv,$ the latter term is the collision number of gas
+molecule per angle.
+
+
+\end{document}

@@ -1,0 +1,149 @@
+
+\documentclass{ctexart}
+\usepackage{amsmath}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.00.0.2552}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{Created=Thursday, November 05, 2015 09:02:56}
+%TCIDATA{LastRevised=Thursday, November 05, 2015 17:37:42}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Blank - Standard LaTeX Article">}
+%TCIDATA{CSTFile=40 LaTeX article.cst}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+
+
+\begin{document}
+
+
+
+Week Eight 
+
+4.11 For the given substance,$g=1+\frac{j\left( j+1\right) +s\left(
+s+1\right) -l\left( l+1\right) }{2j(j+1)}=2.$ The partition function is $%
+z\left( \beta ,H\right) =\frac{Sh\left[ a\left( j+1\right) \right] }{Sh\frac{%
+a}{2}}=\frac{Sh\left[ \frac{9}{2}a\right] }{Sh\frac{a}{2}},$where
+
+$a=\beta \mu _{0}\mu _{B}gH=2\beta \mu _{0}\mu _{B}H.$ At high temperature,
+by Curie's Law, $\chi =\frac{C}{T},$where $C=\frac{1}{3}j\left( j+1\right)
+\mu _{0}\left( \mu _{B}g\right) ^{2}\frac{n}{k}=21\mu _{0}\mu _{B}^{2}\frac{n%
+}{k},$where n represents the particle number per unit volume.
+
+\bigskip At low temperature, $m=\frac{m}{H}=\frac{n\mu _{B}gj}{H}=\frac{7\mu
+_{B}n}{H},$where $H$ represents the external field.
+
+4.12 $\left( 1\right) $由题目知银原%
+子的自旋磁矩只能取%
+平行与反平行于磁场%
+方向两种情形,记每一%
+自旋磁矩大小为$\mu _{s}$则%
+相应的磁势能为
+
+$\mp \mu _{s}B$,采用正则系综的%
+办法,单粒子partition function 为$%
+z=e^{\beta \mu _{s}B}+e^{-\beta \mu _{s}B}=2\cosh \left( \beta \mu
+_{s}B\right) \implies $设共有N个原子,%
+其中$N_{+}$平行磁场场方%
+向,另外$\left( N-N_{+}\right) $与磁场%
+方向反平行,体系的总%
+能量为$E=N_{+}\left( -\mu _{s}B\right) +\left(
+N-N_{+}\right) \left( \mu _{s}B\right) .$
+
+另一方面,$E=-N\frac{\partial \ln z}{\partial \beta }%
+=-\mu _{s}BN\tanh \left( \beta \mu _{s}B\right) $.联立解%
+得$N_{+}=\frac{1+\tanh \left( \beta \mu _{s}B\right) }{2}N.$
+
+这一关系也可由classical Boltzmann 
+统计给出,由于单粒子%
+态简并度均为1由公式$%
+a_{i}=e^{-\alpha -\beta \epsilon }$和$\frac{e^{-\alpha }}{N}=\frac{1}{z%
+}$的换算关系可求出$N_{+}=%
+\frac{N}{z}e^{\beta \mu _{s}B}=\frac{Ne^{\beta \mu _{s}B}}{2\cosh \left(
+\beta \mu _{s}B\right) }$,由双曲函数的%
+关系式可证明两式相%
+同.
+
+$\left( 2\right) $单分子平均磁矩%
+为$\bar{m}=\mu _{s}N_{+}-\mu _{s}\left( N-N_{+}\right) =\mu _{s}\tanh
+\left( \beta \mu _{s}B\right) ,$此式也可由"%
+物态方程"推出:$M=\sum \mu _{i}e^{-\alpha
+-\beta \epsilon _{i}}$
+
+$=\frac{N}{z}\sum \mu _{i}e^{-\beta \epsilon _{i}}\implies \bar{m}=\frac{1}{z%
+}\sum \mu _{i}e^{-\beta \epsilon _{i}}=\frac{1}{\beta }\frac{\partial \ln z}{%
+\partial B}\implies \bar{m}=\mu _{s}\tanh \left( \beta \mu _{s}B\right) .$
+
+5.1 题中所示为单原子理%
+想玻色气体或费米气%
+体,在弱简并即$e^{-\alpha }<1$的%
+条件下由体系巨配分%
+函数的对数为
+
+$\ln \Xi =\underset{i}{\sum }\omega _{i}\ln \left( 1+e^{-\alpha -\beta
+\epsilon _{i}}\right) ,$在准经典近似%
+下$\ln \Xi $可由积分近似计%
+算
+
+$\ln \Xi =\int \frac{1}{h^{3}}\ln \left( 1+e^{-\alpha -\beta \epsilon
+_{i}}\right) d\omega ,$积分限为状态%
+空间$\left( \vec{p},\vec{q}\right) $,通过积%
+分变换可将此积分变%
+到能量空间上
+
+$\ln \Xi =\int_{0}^{\infty }g\left( \epsilon \right) \ln \left( 1+e^{-\alpha
+-\beta \epsilon }\right) d\epsilon ,$其中$g\left( \epsilon
+\right) $表示体系能态密度%
+即$g\left( \epsilon \right) d\epsilon $表示在$%
+\epsilon \symbol{126}\epsilon +d\epsilon $能量区间%
+内的微观状态数,对单%
+原子理想气体可以求%
+出$g\left( \epsilon \right) =\frac{1}{h^{3}}\frac{d\Omega \left(
+\epsilon \right) }{d\epsilon }=\frac{2\pi V}{h^{3}}\left( 2m\right) ^{3/2}%
+\sqrt{\epsilon },$代入上式有
+
+$\ln \Xi =\int_{0}^{\infty }\frac{2\pi V}{h^{3}}\left( 2m\right) ^{3/2}\sqrt{%
+\epsilon }\ln \left( 1+e^{-\alpha -\beta \epsilon }\right) d\epsilon $
+
+$\bar{E}=-\frac{\partial \ln \Xi }{\partial \beta }=\int_{0}^{\infty }\frac{%
+2\pi V}{h^{3}}\left( 2m\right) ^{3/2}\sqrt{\epsilon }\frac{\epsilon
+e^{-\alpha -\beta \epsilon }}{1+e^{-\alpha -\beta \epsilon }}d\epsilon $
+
+分部积分有$\bar{E}=\frac{-\int_{0}^{\infty }%
+\frac{2\pi V}{h^{3}}\left( 2m\right) ^{3/2}\ln \left( 1+e^{-\alpha -\beta
+\epsilon }\right) d\epsilon ^{3/2}}{-\beta }=\frac{3}{2}\frac{V}{\beta }%
+\int_{0}^{\infty }\frac{2\pi }{h^{3}}\left( 2m\right) ^{3/2}\sqrt{\epsilon }%
+\ln \left( 1+e^{-\alpha -\beta \epsilon }\right) d\epsilon $
+
+由"物态方程"有$P=\frac{1}{\beta }\frac{%
+\partial \ln \Xi }{\partial V}=\int_{0}^{\infty }\frac{2\pi }{h^{3}}\left(
+2m\right) ^{3/2}\sqrt{\epsilon }\ln \left( 1+e^{-\alpha -\beta \epsilon
+}\right) d\epsilon $
+
+$\implies \bar{E}=\frac{3V}{2}P\implies P=\frac{2\bar{E}}{3V}.$
+
+
+\end{document}

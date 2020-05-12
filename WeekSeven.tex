@@ -1,0 +1,148 @@
+
+\documentclass{ctexart}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath}
+
+
+\setcounter{MaxMatrixCols}{10}
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.00.0.2552}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{Created=Thursday, October 29, 2015 20:28:22}
+%TCIDATA{LastRevised=Saturday, October 31, 2015 12:51:54}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Blank - Standard LaTeX Article">}
+%TCIDATA{CSTFile=40 LaTeX article.cst}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+
+
+\begin{document}
+
+
+
+\bigskip 赵丰2013012178 CourseworkOfWeek7 Wednesday
+
+4.7
+
+1. $\epsilon =\frac{p^{2}}{2m}+U,$we have already calculated the interval
+energy for such case is $\bar{E}=\frac{3}{2}NkT,$
+
+Substituting T in the ideal gas state equation gives $PV=Nk\frac{2\bar{E}}{%
+3Nk}\Longrightarrow P=\frac{2\bar{E}}{3V}.$
+
+2. $\epsilon =cp+U,z=\frac{1}{h^{3}}V\int e^{-c\beta \sqrt{%
+p_{x}^{2}+p_{y}^{2}+p_{z}^{2}}}d\vec{p}=\frac{1}{h^{3}}V\int_{0}^{\infty
+}e^{-c\beta p}4\pi p^{2}dp=\frac{8\pi V}{h^{3}c^{3}\beta ^{3}}.$
+
+$\bar{E}=-N\frac{\partial \ln z}{\partial \beta }=3NkT.$物态%
+方程为 $p=-N\frac{1}{\beta }\frac{\partial \ln z}{\partial
+V}=\frac{NkT}{V},$same with 1.$\implies p=\frac{\bar{E}}{3V}.$
+
+4.8
+
+\bigskip $\epsilon =\frac{p_{x}^{2}+p_{y}^{2}+p_{z}^{2}}{2m}+mgz$
+
+$z=\frac{1}{h^{3}}S\int e^{-\beta \epsilon }d\vec{p}dz=S\left( \frac{2\pi m}{%
+h^{2}\beta }\right) ^{3/2}\int_{0}^{H}e^{-\beta mgz}dz$ $($借用%
+单原子分子在无外场%
+中的partition function 的结论)
+
+=$S\frac{\left( 2\pi m\right) ^{3/2}}{h^{3}\beta ^{5/2}}\frac{1-e^{-\beta
+mgH}}{mg},$
+
+$\bar{E}=-N\frac{\partial \ln z}{\partial \beta }=\frac{5}{2}NkT+\frac{%
+NmgHe^{-\beta mgH}}{1-e^{-\beta mgH}}=E_{0}+NkT-\frac{NmgH}{e^{\beta mgH}-1}%
+. $
+
+$C_{V}=\frac{\partial \bar{E}}{\partial T}=C_{V}^{0}+Nk+\frac{1}{kT^{2}}%
+\frac{\partial }{\partial \beta }\frac{NmgH}{e^{\beta mgH}-1}%
+=C_{V}^{0}+Nk-Nk\left( \frac{mgH}{kT}\right) ^{2}\frac{e^{\frac{mgH}{kT}}}{%
+\left( e^{\frac{mgH}{kT}}-1\right) ^{2}}.$
+
+高温极限下 $T->\infty ,$此时$%
+Nk\left( \frac{mgH}{kT}\right) ^{2}\frac{e^{\frac{mgH}{kT}}}{\left( e^{\frac{%
+mgH}{kT}}-1\right) ^{2}}\approx Nk\left( 1+\frac{mgH}{kT}\right) \implies
+C_{V}\approx C_{V}^{0}-\frac{NmgH}{T}.$
+
+低温极限下,$T->0,$此时$Nk\left( 
+\frac{mgH}{kT}\right) ^{2}\frac{e^{\frac{mgH}{kT}}}{\left( e^{\frac{mgH}{kT}%
+}-1\right) ^{2}}->0,$因而可忽略$\implies
+C_{V}\approx C_{V}^{0}+Nk.$
+
+4.9
+
+$\left( 1\right) z^{r}\left( T\right) =\frac{1}{h^{2}}\int e^{-\beta
+\epsilon ^{r}}d\theta d\varphi dp_{\theta }dp_{\varphi }=\frac{1}{h^{2}}\int
+e^{\beta \rho \epsilon \cos \theta }d\varphi d\theta \left( \frac{2\pi I\sin
+\theta }{\beta }\right) ,($利用异核双原%
+子分子高温下z的近似)
+
+=$\frac{2\pi I}{h^{2}\beta }2\pi \frac{e^{\beta \rho \epsilon }-e^{-\beta
+\rho \epsilon }}{\beta \rho \epsilon }=\frac{4\pi ^{2}I\left( e^{\beta \rho
+\epsilon }-e^{-\beta \rho \epsilon }\right) }{h^{2}\beta ^{2}\rho \epsilon }=%
+\frac{8\pi ^{2}IkT}{h^{2}}\frac{sh\left( \frac{\rho \epsilon }{kT}\right) }{%
+\frac{\rho \epsilon }{kT}}.$
+
+$\left( 2\right) $电极化强度为宏%
+观量,为对应微观量单%
+粒子的电偶极矩的统%
+计平均值:
+
+$P=\sum \rho \cos \theta $ $\frac{e^{-\beta \epsilon ^{r}}}{Z},$注%
+意到$\frac{\partial e^{-\beta \epsilon ^{r}}}{\partial \epsilon }%
+=\beta \rho \cos \theta \implies P=\frac{1}{\beta Z}\sum \frac{\partial
+e^{-\beta \epsilon ^{r}}}{\partial \epsilon }=\frac{1}{\beta Z}\frac{%
+\partial }{\partial \epsilon }\sum e^{-\beta \epsilon ^{r}}$
+
+=$\frac{1}{\beta }\frac{\partial \ln Z}{\partial \epsilon }=\frac{n}{\beta }%
+\frac{\partial \ln z}{\partial \epsilon }=\frac{n}{\beta }\left( \beta \rho 
+\frac{e^{\beta \rho \epsilon }+e^{-\beta \rho \epsilon }}{e^{\beta \rho
+\epsilon }-e^{-\beta \rho \epsilon }}-\frac{1}{\epsilon }\right) =n\rho
+\left( \frac{e^{x}+e^{-x}}{e^{x}-e^{-x}}-\frac{1}{x}\right) ,$其%
+中$x=\beta \rho \epsilon .$
+
+4.10 $z=\underset{n=0}{\overset{\infty }{\sum }}\left( n+1\right) e^{-\left(
+n+1\right) \beta h\nu },$设$x=e^{-\beta h\nu }\implies z=\underset{n=0}%
+{\overset{\infty }{\sum }}\left( n+1\right) x^{n+1}=x\underset{n=0}{\overset{%
+\infty }{\sum }}\left( n+1\right) x^{n}$
+
+=$x\underset{n=0}{\overset{\infty }{\sum }}\frac{d}{dx}x^{n+1}=x\frac{d}{dx}%
+\underset{n=0}{\overset{\infty }{\sum }}x^{n+1}=x\frac{d}{dx}\frac{x}{1-x}%
+=\allowbreak \frac{x}{\left( 1-x\right) ^{2}}=\frac{e^{-\beta h\nu }}{\left(
+1-e^{-\beta h\nu }\right) ^{2}}=\left( \frac{e^{-\frac{1}{2}\beta h\nu }}{%
+1-e^{-\beta h\nu }}\right) ^{2}=z_{1}^{2}$
+
+其中$z_{1}$为一维简谐振%
+子的partition function.
+
+$E=-N\frac{\partial \ln z}{\partial \beta }=2E_{1},$其中$E_{1}$%
+为一维简谐振子的能%
+量
+
+$\implies E=2Nh\nu \left[ \frac{1}{2}+\frac{e^{-\beta h\nu }}{1-e^{^{-\beta
+h\nu }}}\right] .$
+
+
+\end{document}
