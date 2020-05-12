@@ -1,0 +1,82 @@
+
+\documentclass{ctexart}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath}
+
+
+\setcounter{MaxMatrixCols}{10}
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.00.0.2552}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{Created=Tuesday, November 10, 2015 00:50:14}
+%TCIDATA{LastRevised=Tuesday, November 10, 2015 01:49:39}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Blank - Standard LaTeX Article">}
+%TCIDATA{CSTFile=40 LaTeX article.cst}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+
+
+\begin{document}
+
+
+
+由Boltzmann distribution 导出三维理%
+气速率Maxwell分布:
+
+$\frac{dN}{N}=Ce^{-\beta \epsilon }d\vec{p}$
+
+等式左边表示处在$\vec{p}+d%
+\vec{p}$动量空间体积元内%
+的粒子数,其中位置空%
+间已经被积掉.
+
+$\implies \frac{dN}{N}=Ce^{-\beta ^{\prime }v^{2}}m^{3}dv_{x}dv_{y}dv_{z},$%
+其中 $\beta ^{\prime }=\frac{m}{2kT}.$
+
+在速度空间做球坐标%
+变换并按径向积分得
+
+$\frac{dN}{N}=Ce^{-\beta ^{\prime }v^{2}}m^{3}4\pi v^{2}dv=C^{\prime
+}e^{-\beta ^{\prime }v^{2}}v^{2}dv,$此即为三维%
+理气速率Maxwell分布,
+
+其中 $f\left( v\right) =C^{\prime }e^{-\beta ^{\prime
+}v^{2}}v^{2},$为pdf.
+
+为求归一化常数$C^{\prime },$%
+做积分\qquad $C^{\prime }\int_{0}^{\infty }e^{-\beta
+^{\prime }v^{2}}v^{2}dv=1\implies $
+
+$-C^{\prime }\frac{d}{d\beta ^{\prime }}\int_{0}^{\infty }e^{-\beta ^{\prime
+}v^{2}}dv=-C^{\prime }\frac{d}{d\beta ^{\prime }}\frac{1}{2}\sqrt{\frac{\pi 
+}{\beta ^{\prime }}}=\frac{C^{\prime }\sqrt{\pi }}{4\beta ^{\prime 3/2}}%
+\implies C^{\prime }=\frac{4}{\sqrt{\pi }}\left( \frac{m}{2kT}\right) ^{3/2}.
+$
+
+此pdf 的期望为\qquad $\int_{0}^{\infty
+}C^{\prime }e^{-\beta ^{\prime }v^{2}}v^{3}dv=$
+
+
+\end{document}
