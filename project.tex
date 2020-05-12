@@ -1,0 +1,111 @@
+
+\documentclass{ctexart}
+\usepackage{amsmath}
+
+
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\input{tcilatex}
+
+\begin{document}
+\begin{CJK}{GBK}{song}
+N维球体体积公式简便%
+推导:
+
+设$\Sigma y=\underset{\underset{i=1}{\overset{n}{\Sigma }}%
+x_{i}^{2}\leq y}{\didotsint }dx_{1}..dx_{n},$
+
+变量替换$\implies \Sigma y=Ky^{n/2},$where $K=%
+\underset{\underset{i=1}{\overset{n}{\Sigma }}x_{i}^{2}\leq 1}{\didotsint }%
+dx_{1}..dx_{n}$ is a constant determined by n.
+
+Let $I=\underset{\NEG{R}^{n}}{\didotsint }e^{-\underset{i=1}{\overset{n}{%
+\Sigma }}x_{i}^{2}}dx_{1}..dx_{n},$ we give two methods to calculate $I.$
+
+Firstly we can use Fubini's Thm and integrate $I$ by parts:
+
+$I=\left( \int_{-\infty }^{\infty }e^{-x^{2}}dx\right) ^{n}=\pi ^{n/2}.$
+
+Secondly we can make substitutions: $y=\underset{i=1}{\overset{n}{\Sigma }}%
+x_{i}^{2}.$
+
+Notice that we can understand $I$ as a limit of summation:
+
+$I=\sum \underset{y<\underset{i=1}{\overset{n}{\Sigma }}x_{i}^{2}<y+\Delta y}%
+{\didotsint }e^{-\underset{i=1}{\overset{n}{\Sigma }}%
+x_{i}^{2}}dx_{1}..dx_{n}=\sum \underset{y<\underset{i=1}{\overset{n}{\Sigma }%
+}x_{i}^{2}<y+\Delta y}{\didotsint }e^{-y}dx_{1}..dx_{n}=\sum e^{-y}\underset{%
+y<\underset{i=1}{\overset{n}{\Sigma }}x_{i}^{2}<y+\Delta y}{\didotsint }%
+dx_{1}..dx_{n}$
+
+=$\sum e^{-y}d\Sigma y,$where $d\Sigma y=\underset{\underset{i=1}{\overset{n}%
+{\Sigma }}x_{i}^{2}<y+\Delta y}{\didotsint }dx_{1}..dx_{n}-\underset{%
+\underset{i=1}{\overset{n}{\Sigma }}x_{i}^{2}<y}{\didotsint }dx_{1}..dx_{n}.$
+
+As $\Delta y$ is very small, the summation can be replaced by integral sign,
+we have
+
+$I=\int_{0}^{\infty }e^{-y}d\Sigma y.$ We can calculate the differential
+from $\Sigma y=Ky^{n/2}\implies $
+
+$I=K\frac{n}{2}\int_{0}^{\infty }y^{\frac{n}{2}-1}e^{-y}dy=K\frac{n}{2}%
+\Gamma \left( \frac{n}{2}\right) =K\Gamma \left( \frac{n}{2}+1\right) .$
+
+Comparing the results from the two methods gives $K=\frac{\pi ^{n/2}}{\Gamma
+\left( \frac{n}{2}+1\right) }.$
+
+此法可照搬用于推导n%
+维单形$\underset{\underset{i=1}{\overset{n}{\Sigma }}%
+x_{i}\leq 1\&x_{i}\geq 0}{\didotsint }dx_{1}..dx_{n}=\frac{1}{n!}.$
+
+\bigskip
+
+第四周作业题另一种%
+可能的情况$\left( \text{粒子%
+不可分辨}\right) $:
+
+其中$E_{i}$为系统处于某%
+一微观态时所对应的%
+能量值,此题中$E_{i}$由$N$个%
+粒子占据的能级确定$,$%
+可由下式计算
+
+$Z=\underset{i+j\leq N}{\sum }e^{\beta \left( i\epsilon _{1}+j\epsilon
+_{2}\right) }=\underset{i=0}{\overset{N}{\sum }}\underset{j=0}{\overset{N-i}{%
+\sum }}e^{\beta \left( i\epsilon _{1}+j\epsilon _{2}\right) }=\underset{i=0}{%
+\overset{N}{\sum }}e^{\beta i\epsilon _{1}}\underset{j=0}{\overset{N-i}{\sum 
+}}e^{\beta j\epsilon _{2}}$
+
+=$\underset{i=0}{\overset{N}{\sum }}e^{\beta i\epsilon _{1}}\frac{1-e^{\beta
+\epsilon _{2}(N+1-i)}}{1-e^{\beta \epsilon _{2}}}=\frac{1}{1-e^{\beta
+\epsilon _{2}}}(\underset{i=0}{\overset{N}{\sum }}e^{\beta i\epsilon
+_{1}}-e^{\beta \epsilon _{2}(N+1)}\underset{i=0}{\overset{N}{\sum }}e^{\beta
+i\left( \epsilon _{1}-\epsilon _{2}\right) })$
+
+=$\frac{1}{1-e^{\beta \epsilon _{2}}}(\frac{1-e^{\beta \epsilon _{1}\left(
+N+1\right) }}{1-e^{\beta \epsilon _{1}}}-e^{\beta \epsilon _{2}(N+1)}\frac{%
+1-e^{\beta \left( \epsilon _{1}-\epsilon _{2}\right) \left( N+1\right) }}{%
+1-e^{\beta \left( \epsilon _{1}-\epsilon _{2}\right) }})=$
+\end {CJK}
+\end{document}
