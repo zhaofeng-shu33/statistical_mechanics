@@ -1,0 +1,124 @@
+
+\documentclass{ctexart}
+\usepackage{amsmath}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.00.0.2552}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{Created=Tuesday, November 10, 2015 02:52:24}
+%TCIDATA{LastRevised=Tuesday, November 10, 2015 23:17:10}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Blank - Standard LaTeX Article">}
+%TCIDATA{CSTFile=40 LaTeX article.cst}
+%TCIDATA{ComputeDefs=
+%$S=k\left( \alpha \bar{N}+\beta \bar{E}+\ln \Xi \right) =k\left( \bar{N}\ln 
+%\frac{z}{\bar{N}}+\frac{3}{2}\bar{N}+\bar{N}\right) =k\left( \bar{N}\ln
+%\right) $
+%}
+
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+
+
+\begin{document}
+
+
+
+正则系综导出单原子%
+理想气体$E$和$S$的表达%
+式
+
+单粒子配分函数为$z=V\left( 
+\frac{2\pi m}{\beta h^{2}}\right) ^{3/2},$在双原子%
+的情形,此式对应为平%
+动配分函数$z_{t}.$
+
+$E=-N\frac{\partial \ln z}{\partial \beta }=\frac{3}{2}NkT.$
+
+$S=k\left( \ln Z+\beta E\right) ,$因粒子不可%
+分辨 $Z=\frac{z^{N}}{N!},$
+
+$S=k\left( N\ln z-\left( \ln N-1\right) N+\frac{3}{2}N\right) $
+
+=$kN\ln \frac{z}{N}+\frac{5}{2}N=kN\ln \frac{V}{N}\left( \frac{2\pi m}{\beta
+h^{2}}\right) ^{3/2}+\frac{5}{2}kN.$
+
+对双原子分子,在常温%
+下振动配分函数对$z_{v}$%
+贡献很小,只考虑$z_{t}$和$%
+z_{r}=\frac{8\pi ^{2}I}{\beta h^{2}}.z=z_{t}z_{r}$
+
+$E=-N\frac{\partial \ln z}{\partial \beta }=\frac{5}{2}NkT\implies C_{v}=%
+\frac{5}{2}kT.$
+
+$S=k\left( \ln Z+\beta E\right) ,$因粒子不可%
+分辨 $Z=\frac{z_{t}^{N}z_{r}^{N}}{N!},$
+
+$S=k\left( N\ln z-\left( \ln N-1\right) N+\frac{5}{2}N\right) $
+
+=$kN\ln \frac{z}{N}+\frac{7}{2}N=kN\ln \frac{V}{N}\frac{C}{\beta ^{5/2}}+%
+\frac{5}{2}kN.$
+
+巨正则系综导出单原%
+子理想气体$E$和$S$的表%
+达式
+
+$\Xi =\underset{N=0}{\overset{\infty }{\sum }}e^{-\alpha N-\beta E},$准%
+经典近似下
+
+$\Xi =\underset{N=0}{\overset{\infty }{\sum }}\frac{1}{N!h^{3N}}\int
+e^{-\alpha N-\beta E}d\omega =\underset{N=0}{\overset{\infty }{\sum }}\frac{%
+e^{-\alpha N}z^{N}}{N!}=\exp \left( e^{-\alpha }z\right) $
+
+$\implies \ln \Xi =e^{-\alpha }z.$
+
+平均粒子数$\bar{N}=-\frac{\partial \ln \Xi }{%
+\partial \alpha }=e^{-\alpha }z=\ln \Xi .$
+
+$\bar{E}=-\frac{\partial \ln \Xi }{\partial \beta }=\frac{3}{2\beta }%
+e^{-\alpha }z=\frac{3}{2}\bar{N}kT.$
+
+$S=k\left( \alpha \bar{N}+\beta \bar{E}+\ln \Xi \right) =k\left( \bar{N}\ln 
+\frac{z}{\bar{N}}+\frac{3}{2}\bar{N}+\bar{N}\right) =k\bar{N}\ln \frac{V}{N}%
+\left( \frac{2\pi m}{\beta h^{2}}\right) ^{3/2}+\frac{5}{2}k\bar{N}$
+
+用巨正则系综求熵最%
+简便.
+
+三维相对论气体$\left( \epsilon
+=cp\right) $配分函数的计算,设%
+气体体积为V,粒子数为N,%
+粒子可分辨:
+
+$z=\frac{1}{h^{3}}\int e^{-\beta \epsilon }d\vec{\omega}=\frac{V}{h^{3}}%
+\int_{0}^{\infty }e^{-\beta cp}4\pi p^{2}dp=\frac{8\pi V}{h^{3}c^{3}\beta
+^{3}}$
+
+$\implies E=3NkT,$相对论气体仍满%
+足物态方程$pV=NkT.$
+
+
+\end{document}

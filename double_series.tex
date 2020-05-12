@@ -1,0 +1,113 @@
+
+\documentclass{ctexart}
+\usepackage{amsmath}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.00.0.2552}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{Created=Saturday, September 26, 2015 18:16:14}
+%TCIDATA{LastRevised=Sunday, September 27, 2015 00:31:22}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Scientific Notebook\Blank Document">}
+%TCIDATA{CSTFile=Math with theorems suppressed.cst}
+%TCIDATA{PageSetup=72,72,72,72,0}
+%TCIDATA{AllPages=
+%F=36,\PARA{038<p type="texpara" tag="Body Text" >\hfill \thepage}
+%}
+
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+
+
+\begin{document}
+
+
+
+$a_{kl}$
+
+\bigskip 
+
+$\overset{\infty }{\underset{l=1}{\sum }}a_{kl}=\left( -1\right) ^{k}k%
+\overset{\infty }{\underset{l=1}{\sum }}\left( -1\right) ^{l}\left( \frac{1}{%
+l+k}-\frac{k}{\left( l+k\right) ^{2}}\right) ,\qquad \left( 1\right) \qquad $%
+Let $t=l+k;$
+
+$\overset{\infty }{\underset{l=1}{\sum }}\left( -1\right) ^{l}\left( \frac{1%
+}{l+k}-\frac{k}{\left( l+k\right) ^{2}}\right) =\overset{\infty }{\underset{%
+t=k+1}{\sum }}\left( -1\right) ^{t-k}\left( \frac{1}{t}-\frac{k}{t^{2}}%
+\right) $
+
+=$\overset{\infty }{\underset{t=1}{\sum }}\left( -1\right) ^{t-k}\left( 
+\frac{1}{t}-\frac{k}{t^{2}}\right) -\overset{k}{\underset{t=1}{\sum }}\left(
+-1\right) ^{t-k}\left( \frac{1}{t}-\frac{k}{t^{2}}\right) \qquad \left(
+2\right) $
+
+$\overset{\infty }{\underset{t=1}{\sum }}\left( -1\right) ^{t-k}\left( \frac{%
+1}{t}-\frac{k}{t^{2}}\right) =\left( -1\right) ^{k}\overset{\infty }{%
+\underset{t=1}{\sum }}\left( -1\right) ^{t}\left( \frac{1}{t}-\frac{k}{t^{2}}%
+\right) =\left( -1\right) ^{k}\left( -\ln 2+\frac{k\pi }{12}\right) \qquad
+\left( 3\right) $
+
+Substituting $\left( 3\right) $ into $\left( 2\right) $ $\rightarrow \overset%
+{\infty }{\underset{l=1}{\sum }}\left( -1\right) ^{l}\left( \frac{1}{l+k}-%
+\frac{k}{\left( l+k\right) ^{2}}\right) =\left( -1\right) ^{k}\left( -\ln 2+%
+\frac{k\pi }{12}\right) -\overset{k}{\underset{t=1}{\sum }}\left( -1\right)
+^{t-k}\left( \frac{1}{t}-\frac{k}{t^{2}}\right) \qquad \left( 4\right) $
+
+Substituting $\left( 4\right) $ into $\left( 1\right) \rightarrow \overset{%
+\infty }{\underset{l=1}{\sum }}a_{kl}=k\left( -\ln 2+\frac{k\pi }{12}\right)
+-\overset{k}{\underset{t=1}{\sum }}\left( -1\right) ^{t}\left( \frac{k}{t}-%
+\frac{k^{2}}{t^{2}}\right) $
+
+$\overset{\infty }{\underset{k=1}{\sum }}\overset{\infty }{\underset{l=1}{%
+\sum }}a_{kl}=\underset{n->\infty }{\lim }\overset{n}{\underset{k=1}{\sum }}%
+\overset{\infty }{\underset{l=1}{\sum }}a_{kl}=\overset{n}{\underset{k=1}{%
+\sum }}\left[ k\left( -\ln 2+\frac{k\pi }{12}\right) -\overset{k}{\underset{%
+t=1}{\sum }}\left( -1\right) ^{t}\left( \frac{k}{t}-\frac{k^{2}}{t^{2}}%
+\right) \right] $
+
+=$\left( -\ln 2\right) \overset{n}{\underset{k=1}{\sum }}k+\frac{\pi }{12}%
+\overset{n}{\underset{k=1}{\sum }}k^{2}-\overset{n}{\underset{k=1}{\sum }}%
+\overset{k}{\underset{t=1}{\sum }}\left( -1\right) ^{t}\left( \frac{k}{t}-%
+\frac{k^{2}}{t^{2}}\right) $
+
+$\overset{n}{\underset{k=1}{\sum }}\overset{k}{\underset{t=1}{\sum }}\left(
+-1\right) ^{t}\left( \frac{k}{t}-\frac{k^{2}}{t^{2}}\right) =\overset{n}{%
+\underset{t=1}{\sum }}\overset{n}{\underset{k=t}{\sum }}\left( -1\right)
+^{t}\left( \frac{k}{t}-\frac{k^{2}}{t^{2}}\right) $
+
+$=\overset{n}{\underset{t=1}{\sum }}\left( -1\right) ^{t}\left[ \overset{n}{%
+\underset{k=1}{\sum }}\left( \frac{k}{t}-\frac{k^{2}}{t^{2}}\right) -%
+\underset{k=1}{\overset{t}{\sum }}\left( \frac{k}{t}-\frac{k^{2}}{t^{2}}%
+\right) \right] $
+
+$=\overset{n}{\underset{t=1}{\sum }}\left( -1\right) ^{t}\left[ \left( \frac{%
+n\left( n+1\right) }{2t}-\frac{n\left( n+1\right) \left( 2n+1\right) }{6t^{2}%
+}\right) -\left( \frac{t\left( t+1\right) }{2t}-\frac{t\left( t+1\right)
+\left( 2t+1\right) }{6t^{2}}\right) \right] $
+
+
+\end{document}

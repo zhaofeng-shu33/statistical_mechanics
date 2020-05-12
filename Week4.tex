@@ -1,0 +1,154 @@
+
+\documentclass{ctexart}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\setcounter{MaxMatrixCols}{10}
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.00.0.2552}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{Created=Friday, October 09, 2015 07:37:58}
+%TCIDATA{LastRevised=Saturday, October 31, 2015 23:56:04}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Scientific Notebook\Blank Document">}
+%TCIDATA{CSTFile=Math with theorems suppressed.cst}
+%TCIDATA{PageSetup=72,72,72,72,0}
+%TCIDATA{AllPages=
+%F=36,\PARA{038<p type="texpara" tag="Body Text" >\hfill \thepage}
+%}
+
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\def\NEG#1{\mathbb{#1}}
+
+\begin{document}
+
+
+
+\bigskip 统力第四周作业 \qquad 
+赵丰\qquad 2013012178
+
+\bigskip 题目:试计算理想气%
+体的熵
+
+解答:方法一\qquad 使用准%
+经典近似的微正则分%
+布:
+
+在能量为E附近,分子数%
+为N的理想气体微观状%
+态数为$\Omega \left( E\right) =\frac{V^{N}}{N!h^{3N}\Gamma
+\left( \frac{3N}{2}+1\right) }\frac{3N}{2}\left( 2\pi m\right) ^{\frac{3N}{2}%
+}E^{\frac{3N}{2}-1}dE$
+
+$\left( \text{上次作业题已算%
+过,其中用到了等概率%
+假设,因为粒子不可分%
+辨,所以要除以}N\text{!}\right) $
+
+其中$dE$表示能量壳层,$dE$%
+前面的项为概率密度$,$%
+是从系统分布函数即%
+能量小于E的状态数求%
+导得到的$,$出现$N!$是考%
+虑到微观粒子的全同%
+性$,$而$\left( h^{3}\right) ^{N}$则是使用%
+准经典的近似时在3N维%
+的相空间一个状态所%
+占据的体积$\frac{\pi ^{\frac{3N}{2}}}{\Gamma
+\left( \frac{3N}{2}+1\right) }$则对应3N维球%
+体的体积$,$由此式代入%
+熵的定义式$,$可得能量%
+为E时系统的熵$S\left( E\right) =k\ln
+\Omega \left( E\right) $
+
+$\ln \Omega \left( E\right) =\ln \left( \frac{V^{N}}{N!h^{3N}\Gamma \left( 
+\frac{3N}{2}+1\right) }\frac{3N}{2}\left( 2\pi m\right) ^{\frac{3N}{2}}E^{%
+\frac{3N}{2}-1}dE\right) =N\ln \left( \frac{V\left( 2\pi mE\right) ^{\frac{3%
+}{2}}}{h^{3}}\right) +\ln \left( \frac{3NdE}{2E}\right) +\ln \left( \frac{1}{%
+N!\Gamma \left( \frac{3N}{2}+1\right) }\right) ;$
+
+$\;$为计算最后一项$,$使%
+用$\Gamma \left( \frac{3N}{2}+1\right) \approx \frac{3N}{2}!$的%
+近似,则由Sterling's formula $\ln n!\approx n\ln n-n$
+if n is very large.
+
+$\ln \left( \frac{1}{N!\Gamma \left( \frac{3N}{2}+1\right) }\right) =-\ln
+\left( \frac{3N}{2}!\right) -\ln \left( N!\right) =\frac{3N}{2}-\frac{3N}{2}%
+\ln \left( \frac{3N}{2}\right) +N-N\ln N$
+
+=$\frac{5}{2}N+N\ln \frac{1}{N\cdot \left( \frac{3}{2}N\right) ^{3/2}}$%
+代入$\ln \Omega \left( E\right) $中有
+
+$\ln \Omega \left( E\right) =N\ln \left( \frac{V\left( 2\pi mE\right) ^{%
+\frac{3}{2}}}{h^{3}}\right) +\ln \left( \frac{3NdE}{2E}\right) +\frac{5}{2}%
+N+N\ln \frac{1}{N\cdot \left( \frac{3}{2}N\right) ^{3/2}}$
+
+$=N\ln \left( \frac{V}{h^{3}N}\left( \frac{4\pi mE}{3N}\right) ^{3/2}\right)
++\ln \left( \frac{3NdE}{2E}\right) +\frac{5}{2}N$
+
+其中$\ln \left( \frac{3NdE}{2E}\right) $相比其%
+它两项可以忽略$\implies $
+
+$S\left( E\right) =k\ln \Omega \left( E\right) =Nk\ln \left( \frac{V}{h^{3}N}%
+\left( \frac{4\pi mE}{3N}\right) ^{3/2}\right) +\frac{5}{2}Nk$
+
+\bigskip 方法二\qquad 使用准经%
+典的正则分布
+
+先求系统的Partition Function $Z=\frac{1}{%
+N!h^{3N}}\int e^{-\beta H\left( \vec{q},\vec{p}\right) }d\Omega =\frac{1}{%
+N!h^{3N}}\underset{\vec{q},\vec{p}\in \NEG{R}^{3n}}{\idotsint }e^{-\beta 
+\underset{i=1}{\overset{3n}{\Sigma }}\frac{p_{i}^{2}}{2m}}d\Omega $
+
+=$\frac{V^{N}}{N!h^{3N}}\left( \int_{-\infty }^{\infty }e^{-\beta \frac{%
+p_{i}^{2}}{2m}}dp_{i}\right) ^{3n}\overset{Gaussian\_Integral}{=}\frac{V^{N}%
+}{N!h^{3N}}\left( \frac{2\pi m}{\beta }\right) ^{3N/2}.$
+
+由正则分布的热力学%
+公式\qquad $E=-\left( \frac{\partial \ln Z}{\partial \beta }%
+\right) _{N,V}=\frac{3}{2}N\frac{1}{\beta }=\frac{3}{2}NkT.$
+
+$S=k\left( \ln Z+\beta E\right) =k\left( N\ln \left[ \frac{V}{h^{3}}\left( 
+\frac{2\pi m}{\beta }\right) ^{3/2}\right] -\ln N!+\frac{3}{2}N\right) $
+
+由Stirling's formula $S=k\left( N\ln \left[ \frac{V}{h^{3}}\left( 
+\frac{2\pi m}{\beta }\right) ^{3/2}\right] -N\left( \ln \left( N\right)
+-1\right) +\frac{3}{2}N\right) $
+
+$=kN\ln \left[ \frac{V}{h^{3}N}\left( \frac{2\pi m}{\beta }\right) ^{3/2}%
+\right] $+$\frac{5}{2}kN$
+
+将$\beta $用能量代换即得%
+到和方法一相同的结%
+果
+
+$S=kN\ln \left[ \frac{V}{h^{3}N}\left( \frac{4\pi mE}{3N}\right) ^{3/2}%
+\right] $+$\frac{5}{2}kN$
+
+\bigskip
+
+
+\end{document}
