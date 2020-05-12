@@ -1,7 +1,8 @@
-
 \documentclass{ctexart}
+%original date
+%%TCIDATA{LastRevised=Wednesday, October 21, 2015 18:06:38}
 \usepackage{amsmath}
-
+\usepackage{amssymb}
 
 
 \newtheorem{theorem}{Theorem}
@@ -26,21 +27,19 @@
 \newtheorem{solution}[theorem]{Solution}
 \newtheorem{summary}[theorem]{Summary}
 \newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
-\input{tcilatex}
-
+\def\NEG#1{\mathbb{#1}}
 \begin{document}
-\begin{CJK}{GBK}{song}
 N维球体体积公式简便%
 推导:
 
 设$\Sigma y=\underset{\underset{i=1}{\overset{n}{\Sigma }}%
-x_{i}^{2}\leq y}{\didotsint }dx_{1}..dx_{n},$
+x_{i}^{2}\leq y}{\idotsint }dx_{1}..dx_{n},$
 
 变量替换$\implies \Sigma y=Ky^{n/2},$where $K=%
-\underset{\underset{i=1}{\overset{n}{\Sigma }}x_{i}^{2}\leq 1}{\didotsint }%
+\underset{\underset{i=1}{\overset{n}{\Sigma }}x_{i}^{2}\leq 1}{\idotsint }%
 dx_{1}..dx_{n}$ is a constant determined by n.
 
-Let $I=\underset{\NEG{R}^{n}}{\didotsint }e^{-\underset{i=1}{\overset{n}{%
+Let $I=\underset{\NEG{R}^{n}}{\idotsint }e^{-\underset{i=1}{\overset{n}{%
 \Sigma }}x_{i}^{2}}dx_{1}..dx_{n},$ we give two methods to calculate $I.$
 
 Firstly we can use Fubini's Thm and integrate $I$ by parts:
@@ -53,15 +52,15 @@ x_{i}^{2}.$
 Notice that we can understand $I$ as a limit of summation:
 
 $I=\sum \underset{y<\underset{i=1}{\overset{n}{\Sigma }}x_{i}^{2}<y+\Delta y}%
-{\didotsint }e^{-\underset{i=1}{\overset{n}{\Sigma }}%
+{\idotsint }e^{-\underset{i=1}{\overset{n}{\Sigma }}%
 x_{i}^{2}}dx_{1}..dx_{n}=\sum \underset{y<\underset{i=1}{\overset{n}{\Sigma }%
-}x_{i}^{2}<y+\Delta y}{\didotsint }e^{-y}dx_{1}..dx_{n}=\sum e^{-y}\underset{%
-y<\underset{i=1}{\overset{n}{\Sigma }}x_{i}^{2}<y+\Delta y}{\didotsint }%
+}x_{i}^{2}<y+\Delta y}{\idotsint }e^{-y}dx_{1}..dx_{n}=\sum e^{-y}\underset{%
+y<\underset{i=1}{\overset{n}{\Sigma }}x_{i}^{2}<y+\Delta y}{\idotsint }%
 dx_{1}..dx_{n}$
 
 =$\sum e^{-y}d\Sigma y,$where $d\Sigma y=\underset{\underset{i=1}{\overset{n}%
-{\Sigma }}x_{i}^{2}<y+\Delta y}{\didotsint }dx_{1}..dx_{n}-\underset{%
-\underset{i=1}{\overset{n}{\Sigma }}x_{i}^{2}<y}{\didotsint }dx_{1}..dx_{n}.$
+{\Sigma }}x_{i}^{2}<y+\Delta y}{\idotsint }dx_{1}..dx_{n}-\underset{%
+\underset{i=1}{\overset{n}{\Sigma }}x_{i}^{2}<y}{\idotsint }dx_{1}..dx_{n}.$
 
 As $\Delta y$ is very small, the summation can be replaced by integral sign,
 we have
@@ -77,7 +76,7 @@ Comparing the results from the two methods gives $K=\frac{\pi ^{n/2}}{\Gamma
 
 此法可照搬用于推导n%
 维单形$\underset{\underset{i=1}{\overset{n}{\Sigma }}%
-x_{i}\leq 1\&x_{i}\geq 0}{\didotsint }dx_{1}..dx_{n}=\frac{1}{n!}.$
+x_{i}\leq 1\&x_{i}\geq 0}{\idotsint }dx_{1}..dx_{n}=\frac{1}{n!}.$
 
 \bigskip
 
@@ -107,5 +106,4 @@ i\left( \epsilon _{1}-\epsilon _{2}\right) })$
 N+1\right) }}{1-e^{\beta \epsilon _{1}}}-e^{\beta \epsilon _{2}(N+1)}\frac{%
 1-e^{\beta \left( \epsilon _{1}-\epsilon _{2}\right) \left( N+1\right) }}{%
 1-e^{\beta \left( \epsilon _{1}-\epsilon _{2}\right) }})=$
-\end {CJK}
 \end{document}
