@@ -1,0 +1,139 @@
+
+\documentclass{ctexart}
+\usepackage{amsmath}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.00.0.2552}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{Created=Friday, November 06, 2015 08:16:59}
+%TCIDATA{LastRevised=Friday, November 06, 2015 12:16:24}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Blank - Standard LaTeX Article">}
+%TCIDATA{CSTFile=40 LaTeX article.cst}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+
+
+\begin{document}
+
+
+
+$\left( 3\right) $求最可几分布的%
+几率$p\left( \frac{N}{2}\right) ,$假设n是%
+最可几分布$\frac{N}{2}$的14亿%
+分之一即$\left( n\approx 10^{13}\right) ,$
+
+问分布的几率p$\left( \frac{N}{2}\pm
+n\right) $是多少?
+
+由此说明,最可几分布%
+代表系统的平衡分布.
+
+$p\left( \frac{N}{2}\right) =\frac{N!}{\left( \frac{N}{2}!\right) ^{2}}%
+\left( \frac{1}{2}\right) ^{N},N\rightarrow \infty .$
+
+$\ln p\left( \frac{N}{2}\right) \rightarrow 0\implies p\left( \frac{N}{2}%
+\right) \rightarrow 1.$
+
+p$\left( \frac{N}{2}\pm n\right) \approx e^{-14^{2}\times 10^{8}}.$
+
+二维理想气体,单个分%
+子的能量在d$\epsilon $范围内%
+的几率是$\rho \left( \epsilon \right) =ce^{-\beta
+\epsilon }d\epsilon ,$c is a constant.
+
+试求:任选两个分子,其%
+总能量在dE范围内的几%
+率,并证\={E}=2kT.
+
+\bigskip 
+
+在面积为S的薄膜上浮%
+有N个有机分子,分子整%
+体可视作是二维理想%
+气体,气体的温度为T,试%
+求气体的定面积热容%
+量$\left( \text{整个有机分子%
+可视为单原子分子}\right) $
+
+先求体系的partition function.$z=\frac{1}{h^{2}}%
+\left( \frac{2\pi m}{\beta }\right) \int e^{-\beta c}dxdy\implies N=NkT.$
+
+\bigskip 
+
+若单原子分子的能量$%
+\epsilon =ap^{2},-$其中a是常数,n$\in N,$p%
+是分子的动量,证明气%
+体的能量\={E}=$\frac{nE}{3V}.$
+
+z=$\frac{V}{h^{2}}\int e^{-\beta \epsilon }d\vec{p}=\frac{4\pi V}{h^{2}}%
+\int_{0}^{\infty }e^{-a\beta p^{n}}p^{2}dp=\frac{4\pi V}{h^{2}}%
+\int_{0}^{\infty }e^{-a\beta p^{n}}\frac{p^{2}}{n\beta ap^{n-1}}d\left(
+a\beta p^{n}\right) =\frac{4\pi V}{h^{2}}\int_{0}^{\infty }e^{-t}\frac{{}}{%
+n\beta a\left( \frac{t}{a\beta }\right) ^{\frac{n-3}{n}}}dt$
+
+=$\frac{4\pi V}{h^{2}}\int_{0}^{\infty }e^{-t}\frac{\left( a\beta \right)
+^{\left( n-3\right) /n}}{n\beta a}t^{\frac{-\left( n-3\right) }{n}}dt=\frac{%
+4\pi V}{h^{2}}\frac{\left( a\beta \right) ^{\left( n-3\right) /n}}{n\beta a}%
+\int_{0}^{\infty }e^{-t}t^{\frac{-\left( n-3\right) }{n}}dt=\frac{4\pi V}{%
+h^{2}}\frac{\left( a\beta \right) ^{\left( n-3\right) /n}}{n\beta a}%
+\int_{0}^{\infty }e^{-t}t^{\frac{-\left( n-3\right) }{n}}dt$
+
+$=\Gamma \left( \frac{3}{n}\right) \frac{4\pi V}{h^{2}}\frac{a^{-3/n}}{n}%
+\beta ^{-3/n}\implies \bar{E}=-N\frac{\partial \ln z}{\partial \beta }=\frac{%
+3N}{n\beta },\bar{p}=\frac{N}{\beta }\frac{\partial \ln z}{\partial V}=\frac{%
+N}{\beta V}=\frac{N}{V}\frac{n\bar{E}}{3N}=\frac{n\bar{E}}{3V}.$
+
+相对论n=1,非相对论n=2.
+
+由N个近独立的三维谐%
+振子组成的系统,振子%
+能级$\epsilon _{n}=\left( n+\frac{3}{2}\right) h\nu ,$简%
+并度$\epsilon _{n}=\frac{1}{2}\left( n+1\right) \left(
+n+2\right) $推Bose分布时有类似,1%
+证:三维谐振子的partition function
+is 三次方 of the partition function of one-dimensional
+harmonic oscillator.
+
+$z_{3}=\sum z_{n}e^{-\beta \left( n+\frac{3}{2}\right) h\nu }=e^{-3\beta
+h\nu /2}\sum \frac{1}{2}\left( n+1\right) \left( n+2\right) x^{n},$where $%
+x=e^{-\beta h\nu }.$
+
+=$e^{-3\beta h\nu /2}\sum \frac{1}{2}\frac{d^{2}}{dx^{2}}x^{n+2}=\frac{1}{2}%
+e^{-3\beta h\nu /2}\frac{d^{2}}{dx^{2}}\overset{\infty }{\underset{n=0}{\sum 
+}}x^{n+2}=\frac{1}{2}e^{-3\beta h\nu /2}\frac{d^{2}}{dx^{2}}\frac{x^{2}}{1-x}%
+=$-(2/(-1 + x)\symbol{94}3)
+
+\bigskip 
+
+试求在绝对零度下,二%
+维Fermi气体的Fermi energy $\epsilon _{F}$和%
+单个粒子的平均能量$%
+\bar{\epsilon}_{0}\left( \text{设粒子的总%
+数为N}\right) $
+
+
+\end{document}
