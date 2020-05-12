@@ -1,0 +1,246 @@
+
+\documentclass{ctexart}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath}
+
+
+\setcounter{MaxMatrixCols}{10}
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.00.0.2552}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{Created=Tuesday, October 13, 2015 14:51:37}
+%TCIDATA{LastRevised=Thursday, November 26, 2015 12:43:21}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Blank - Standard LaTeX Article">}
+%TCIDATA{CSTFile=40 LaTeX article.cst}
+%TCIDATA{ComputeDefs=
+%$F=kT\frac{1-2\frac{N}{{}}}{{}}$
+%}
+
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+
+
+\begin{document}
+
+
+
+\bigskip 统力第五周第一次%
+作业\qquad \qquad \qquad 赵丰\qquad \qquad 2013012178
+
+
+\bigskip 设体系只对外做体%
+积功PdV,H=E+PV=Const,对此状态函%
+数取微分有dE+PdV+VdP=0,
+
+由Clausius 熵公式,孤立系可%
+逆过程dS=$\frac{dQ}{T}$,由First Law of
+Thermodynamics 有dQ=dE+PdV$\implies $
+
+dS=$\frac{dE+PdV}{T}=\frac{-VdP}{T}\implies \left( \frac{\partial S}{%
+\partial P}\right) _{H}=\frac{-V}{T}<0.$
+
+若E=const,则dS=$\frac{PdV}{T}\implies \left( \frac{\partial S}{%
+\partial V}\right) _{E}=\frac{P}{T}>0.$
+
+
+$\left( 2\right) $解:使用微正则系%
+综的方法$\left( N,L\left( \approx V\right) ,E\text{%
+恒定}\right) $,先求满足条件%
+的微观状态数,设各链%
+环两种取向分别为+和-,%
+有$n_{1}$个链环取正向,$n_{2}$%
+个链环取负向,则$%
+n_{1}+n_{2}=N,a\left( n_{1}-n_{2}\right) =L$,从而解出%
+$n_{1}=\frac{N+\frac{l}{a}}{2},n_{2}=\frac{N\acute{-}\frac{l}{a}}{2}.$%
+设$x=\frac{n_{1}}{N}=\frac{N+\frac{l}{a}}{2N}.$由Boltzmann%
+熵的定义$S=k\ln \Omega $，而$\Omega =%
+\binom{N}{n_{1}}=\frac{N!}{n_{1}!\left( N-n_{1}\right) !},$by Stirling's
+formula, we can approximate ln$\Omega $ as follows:
+
+$\ln \Omega =\ln N!-\ln n_{1}!-\ln \left( N-n_{1}\right) !=N\left( \ln
+N-1\right) -n_{1}\left( \ln n_{1}-1\right) -n_{2}\left( \ln n_{2}-1\right)
+=N\ln N-n_{1}\ln n_{1}-n_{2}\ln n_{2}$
+
+$N\left[ x\ln N+\left( 1-x\right) \ln N-x\ln \left( Nx\right) -\left(
+1-x\right) \ln \left( \left( 1-x\right) N\right) \right] =-N\left[ x\ln
+x+\left( 1-x\right) \ln \left( 1-x\right) \right] .$
+
+By the definition of temperature we have:
+
+$\frac{1}{T}=\left( \frac{\partial S}{\partial E}\right) _{N,L}=k\left( 
+\frac{\partial \ln \Omega }{\partial E}\right) _{N,L}=k\left( \frac{\partial
+\ln \Omega }{\partial x}\right) _{N,L}\left( \frac{\partial x}{\partial L}%
+\right) _{N,L}\left( \frac{\partial L}{\partial E}\right) _{N,L}$
+
+=$k\left( N\ln \frac{1-x}{x}\right) \frac{1}{2Na}\left( \frac{\partial L}{%
+\partial E}\right) _{N,L}\implies $
+
+the general force $F=\left( \frac{\partial E}{\partial L}\right)
+_{N,L}=kT\left( \ln \frac{1-x}{x}\right) \frac{1}{2a}.$
+
+As $L<<N_{A},x$ is very near to $\frac{1}{2}$ as shown by $x=\frac{N+\frac{l%
+}{a}}{2N}.$
+
+$\ln \frac{1-x}{x}=\ln \left( 1+\frac{1-2x}{x}\right) \approx \frac{1-2x}{x}%
+, $by Taylor approximation since $\frac{1-2x}{x}\approx 0.$
+
+Then $F=kTN\frac{1-2\frac{N+\frac{l}{a}}{2N}}{\frac{N+\frac{l}{a}}{2N}}\frac{%
+1}{2Na}=\allowbreak -Tk\frac{l}{al+Na^{2}}\approx -\frac{Tk}{Na^{2}}l$
+satisfying Hook's Law$,$the negative sign shows that F is negative to the
+x-axis when l increases (notice that F is the force acted on the system by
+surrounding.)
+
+We can also use the canonical ensemble (N,L,T of the system are fixed) to
+calculate F. First we calculate the partition function.
+
+Since the total energy is fixed by the fixed N and the single energy level
+of each "particle".But we have many states of degeneracy. As show in the
+solution by micro-canonical ensemble, the degeneracy equals eactly $\binom{N%
+}{n_{1}},$that is $\Omega $ calculated above$\implies Z=\Omega e^{-\beta E}.$%
+By the thermodynamic formula for canonical ensemble
+
+$F=-\frac{1}{\beta }\frac{\partial \ln Z}{\partial y}.$Notice that we choose 
+$L$ as the generalized coordinate, which decreases along the action path of
+the exterior force, similar to volume as generalized coordinate. $\implies $
+
+$F=kT\frac{\partial \ln \Omega }{\partial L},$which produces the same
+results as above.
+
+
+解\qquad $\left( 1\right) $对于N个正常%
+位置有n个有晶体缺失%
+共有$\binom{N}{n}$种不同的状%
+态数,对于填隙同理有$%
+\binom{N}{n}$种不同的状态数
+
+$S=k\ln \Omega =k\ln \binom{N}{n}^{2}=2k\ln \frac{N!}{n!\left( N-n\right) !}%
+. $
+
+$\left( 2\right) F=nu-TS=nu-2Tk\ln \frac{N!}{n!\left( N-n\right) !},$by
+Stirling's formula we have
+
+$\ln \frac{N!}{n!\left( N-n\right) !}\approx N\ln N-n\ln n-\left( N-n\right)
+\ln \left( N-n\right) \qquad \left( \text{similar to the above problem}%
+\right) $.
+
+Now assume F is continuous depedent on n and taking the derative of F about
+n gives
+
+$\frac{dF}{dn}=u-2Tk\ln \left( \frac{N}{n}-1\right) .$ F has minimum at some
+n$\implies u-2Tk\ln \left( \frac{N}{n}-1\right) =0$
+
+$\implies \frac{N}{n}=e^{u/\left( 2Tk\right) }+1.$
+
+$N>>n\implies u/\left( 2Tk\right) >>1$
+
+Hence we can approximate $\frac{N}{n}$ by $e^{u/\left( 2Tk\right) }\implies $
+
+n$\approx Ne^{-\frac{u}{2kT}}.$
+
+
+$\left( 1\right) $表面膜的内能变$%
+dE=TdS+\sigma dA\left( TdS\text{相当于\dj }Q,\text{表%
+面积变也引起}dE\right) ,$由$E$ is
+extensive$\left( E\left( \lambda S,\lambda A\right) =\lambda E\left(
+S,A\right) \right) $ and
+
+Euler's Thm$\implies E=ST+\sigma A.\implies SdT+Ad\sigma =0\implies
+S=-A\left( \frac{d\sigma }{dT}\right) $自由能为$%
+F=E-TS=\sigma A.$
+
+$\left( 2\right) $\dj $Q=TdS=-T\left( \frac{d\sigma }{dT}\right) dA\implies
+Q=-T\left( \frac{d\sigma }{dT}\right) \Delta A($dA 相当于%
+表面膜原子数从bulk中增%
+加$,$d$\sigma $是在表面膜
+
+原子数不变strain的变化)
+
+$\left( 3\right) E=\sigma \left( T\right) A-TA\left( \frac{d\sigma }{dT}%
+\right) ,$对可逆绝热过程,$%
+dE=\sigma dA,$认为$A$与$T$为独立变%
+量
+
+$\implies \sigma ^{\prime }\left( T\right) AdT-A\left( \frac{d\sigma }{dT}%
+\right) dT-TA\sigma ^{\prime \prime }\left( T\right) dT+\sigma \left(
+T\right) dA-T\left( \frac{d\sigma }{dT}\right) dA=\sigma dA$
+
+\bigskip $\implies A\sigma ^{\prime \prime }\left( T\right) dT+\left( \frac{%
+d\sigma }{dT}\right) dA=0\implies \frac{\sigma ^{\prime \prime }\left(
+T\right) dT}{\sigma ^{\prime }\left( T\right) }+\frac{dA}{A}=0\implies
+\sigma \left( T\right) =\frac{C}{A},$
+
+where $C$ is an constant$.$
+
+磁滞损耗$\int \mu _{0}HdM$即为磁%
+化时放出的热量,考虑%
+到$M=C\frac{H}{T},T=const.$其大小为$Q=\int
+C\mu _{0}H\frac{dH}{T}=\frac{\mu _{0}CH^{2}}{2T}.$
+
+设每一个粒子具有完%
+全相同的能量E,将小体%
+积v视为考虑的系统,由%
+巨正则分布的概率分%
+布可知v处于有确定的n%
+个粒子的态时几率为$\Xi
+^{-1}e^{-\alpha n-\beta n}=\Xi ^{-1}e^{-cn}\left( \text{乘以n%
+的全排列是因为总能%
+量为}nE\right) .$而P$_{n}$表示任意$%
+n$个粒子在v中的概率$,$%
+因此
+
+$P_{n}=\binom{N}{n}\Xi ^{-1}e^{-cn},$因为$N>>n,$考虑%
+到$P_{n}=\binom{N}{n}\Xi ^{-1}e^{-cn}=\frac{N!}{n!\left( N-n\right) !}%
+\Xi ^{-1}e^{-cn}=\frac{\left( 1-\frac{1}{N}\right) ..\left( 1-\frac{n-1}{N}%
+\right) N^{n}}{n!}\Xi ^{-1}e^{-cn}$
+
+$\approx \frac{N^{n}}{n!}\Xi ^{-1}e^{-cn}=\frac{1}{n!}\Xi ^{-1}\lambda ^{n}.$%
+由归一化条件得$\Xi =e^{\lambda
+}\implies P_{n}=\frac{\lambda ^{n}}{n!}e^{-\lambda }$对P$_{n}$求%
+均值得$E\left( P_{n}\right) =\underset{n=0}{\overset{%
+\infty }{\sum }}nP_{n}=\lambda ,$即$\lambda =\overline{n}.$所%
+以有$P_{n}=\frac{\overline{n}^{n}}{n!}e^{-\overline{n}}$
+
+此题也可用Binomial Distribution 来%
+近似,假设每个粒子在V%
+中服从Uniform Distribution,且不同粒%
+子分布相互独立,则对%
+任一粒子,其落入v体积%
+此随机变量服从Bernoulli
+Distribution,"成功"的概率不妨%
+记为p(=$\frac{v}{V}).$则落入v中的%
+粒子数此随机变量X服%
+从B(N,p),N为总粒子数,相当%
+于实验次数.故有P$\left( X=n\right)
+=\binom{N}{n}p^{n}\left( 1-p\right) ^{N-n}$,由于N\TEXTsymbol{>}%
+\TEXTsymbol{>}n,而Np可近似看成常%
+数$\lambda \left( \underset{N->\infty }{\lim }Np=\lambda ,\text{p}=%
+\frac{v}{V}\right) $,由于Binomial Distribution的极%
+限情形(取热力学极限N-%
+\TEXTsymbol{>}$\infty ,$此时V-\TEXTsymbol{>}$\infty )$即%
+为Poission Distribution$\implies P_{n}=\underset{N->\infty }{\lim }%
+P\left( X=n\right) =\frac{\lambda ^{n}}{n!}e^{-\lambda }.$
+
+
+\end{document}

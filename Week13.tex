@@ -1,0 +1,292 @@
+
+\documentclass{ctexart}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath}
+
+
+\setcounter{MaxMatrixCols}{10}
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.00.0.2552}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{Created=Friday, December 11, 2015 01:29:44}
+%TCIDATA{LastRevised=Saturday, December 12, 2015 21:07:01}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Blank - Standard LaTeX Article">}
+%TCIDATA{CSTFile=40 LaTeX article.cst}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\def\QATOPD#1#2#3#4{{#3 \atopwithdelims#1#2 #4}}%
+
+\begin{document}
+
+
+
+\bigskip \bigskip 统力第13周作业 \qquad 
+赵丰\qquad 2013012178
+
+7.4注:此题略去真空磁导%
+率$\mu _{0}$ 单位的影响,且$M$%
+应理解为总磁矩(磁化%
+强度是单位体积的总%
+磁矩).
+
+由铁磁相变的知识,考%
+虑外场$H=0$,$T<T_{c}$有自发磁%
+化,$T>T_{c}$无自发磁化.
+
+作图法给出临界温度$%
+T_{c}=\frac{\lambda N\mu }{k}.$
+
+\bigskip $M=N\mu \tanh \frac{\mu H+\lambda M}{kT},$令$t^{\prime }=1-%
+\frac{T}{T_{c}}$并代入上式整理%
+得$\left( 1-t^{\prime }\right) \tanh ^{-1}\frac{M}{N\mu }=\frac{\mu H}{%
+kT_{c}}+\frac{M}{N\mu },\tanh ^{-1}\frac{M}{N\mu }$在$t^{\prime }=0$%
+处展开并忽略3阶以上%
+的项
+
+$-t^{\prime }\frac{M}{N\mu }+\frac{1}{3}\left( 1-t^{\prime }\right) \left( 
+\frac{M}{N\mu }\right) ^{3}=\frac{\mu H}{kT_{c}},$令外场$%
+H=0\implies $
+
+$-t^{\prime }+\frac{1}{3}\left( 1-t^{\prime }\right) \left( \frac{M}{N\mu }%
+\right) ^{2}=0$
+
+$\implies \frac{M}{N\mu }=\sqrt{\frac{3t^{\prime }}{1-t^{\prime }}}\approx 
+\sqrt{3t^{\prime }}\implies M=\sqrt{3}N\mu \sqrt{\frac{T_{c}-T}{T_{c}}}.$
+
+7.5 选择磁化强度$m$为序%
+参量,对铁磁相变,在相%
+变点附近$m$连续地由$0$%
+变为非零,因此将体系%
+Gibbs free energy在$T_{c}$附近关于$m$作%
+展开,又因为$G$在$T_{c}$附近%
+要取极小值,展开式中%
+应只含$m^{2}$项$\implies G=c\left( T\right) +\frac{1%
+}{2}a\left( T\right) m^{2}+\frac{1}{4}b\left( T\right) m^{4},$由%
+取极小值的条件
+
+$\frac{\partial G}{\partial m}=0$且$\frac{\partial ^{2}G}{\partial
+m^{2}}>0\implies a\left( T\right) m+b\left( T\right) m^{3}=0,m=0$ or $m^{2}=%
+\frac{-a\left( T\right) }{b\left( T\right) }.$
+
+$m=0$对应$T>T_{c},$为无序态;$m^{2}=-%
+\frac{a\left( T\right) }{b\left( T\right) }$对应$T<T_{c},$%
+为有序态.由$m$在相变点%
+的连续性及$\frac{\partial ^{2}G}{\partial m^{2}%
+}=a\left( T\right) +3b\left( T\right) m^{2}=\QATOPD\{ . {a\left( T\right)
+,T>T_{c}}{-2a\left( T\right) ,T<T_{c}}\implies a\left( T\right) $在%
+相变点附近由负转正,%
+将其在相变点处展开,%
+只保留一阶项有$a\left( T\right)
+=a_{0}t^{\prime },$其中$t^{\prime }=1-\frac{T}{T_{c}},a_{0}<0,$%
+同时将$b\left( T\right) $近似为常%
+数$b.\implies G=\QATOPD\{ . {c\left( T\right) ,T>T_{c}}{c\left(
+T\right) -\frac{a_{0}\left( T\right) ^{2}}{4b},T<T_{c}};S=-\left( \frac{%
+\partial G}{\partial T}\right) _{H}=\QATOPD\{ . {-c^{\prime }\left( T\right)
+,T>T_{c}}{-c^{\prime }\left( T\right) -\frac{a_{0}^{2}t^{\prime }}{2bT_{c}}%
+,T<T_{c}},$考虑到$\frac{a_{0}\left( T\right) ^{2}}{4b}$%
+一阶导数在$T=T_{c}$处取零%
+值$\implies S$在相变点连续.
+
+\bigskip 选做题: 此题$m^{2}$的系%
+数应改为$\frac{1}{2}b\left( T-T_{c}\right) ,b>0,$%
+否则$m=0$始终是符合条件%
+的解,
+
+体系无相变.
+
+在相变的临界温度$T_{c}$%
+下$\frac{\partial G}{\partial m}=0$且$\frac{\partial ^{2}G}{%
+\partial m^{2}}>0$
+
+$\implies m\left( b\left( T-T_{c}\right) +\frac{4}{3}cm^{2}+\frac{3}{2}%
+dm^{4}\right) =0$
+
+可以解得: $m=0,$ or $m^{2}=\frac{-\frac{4}{3}c\pm 
+\sqrt{\frac{16}{9}c^{2}-6b\left( T-T_{c}\right) d}}{3d},$因分%
+子为正,若使体系有相%
+变$\implies d>0.$
+
+$\frac{\partial ^{2}G}{\partial m^{2}}>0\implies b\left( T-T_{c}\right)
++4cm^{2}+\frac{15}{2}dm^{4}>0,$从而知$m=0$在$T>T_{c}$%
+时是符合条件的解.
+
+将另一组解代入自由%
+能的二阶导数表达式%
+中知$m^{2}>-\frac{\frac{4}{3}c}{3d}\implies m^{2}=\frac{-\frac{4%
+}{3}c+\sqrt{\frac{16}{9}c^{2}-6b\left( T-T_{c}\right) d}}{3d},\frac{16}{9}%
+c^{2}-6b\left( T-T_{c}\right) d>0\implies $
+
+$T<T_{c}+\frac{8c^{2}}{27bd}.$
+
+再将两组解回代到自%
+由能表达式中,化简得
+
+$G\left( T\right) =a\left( T\right) -\frac{2cb}{9d}\left( T-T_{c}\right) -%
+\frac{\left( \frac{16}{9}c^{2}-6b\left( T-T_{c}\right) d\right) ^{3/2}}{%
+54d^{2}}+\frac{32c^{3}}{729d^{2}},T<T_{c}+\frac{8c^{2}}{27bd}$
+
+$G\left( T\right) =a\left( T\right) ,T>T_{c}.$
+
+注意到在区间$T_{c}<T<T_{c}+\frac{8c^{2}}{%
+27bd}$表达式有两种选择,%
+但若考虑到Gibbs energy的连续%
+性应有$G\left( T\right) =a\left( T\right) -\frac{2cb}{9d}%
+\left( T-T_{c}\right) -\frac{\left( \frac{16}{9}c^{2}-6b\left(
+T-T_{c}\right) d\right) ^{3/2}}{54d^{2}}+\frac{32c^{3}}{729d^{2}},T<T_{c}$
+
+$G\left( T\right) =a\left( T\right) ,T>T_{c}.$
+
+相变前后体系的熵分%
+别为$S=-\frac{dG}{dT}=-\frac{da\left( T\right) }{dT}+\frac{2cb}{%
+9d}+\frac{-b\left( \frac{16}{9}c^{2}-6b\left( T-T_{c}\right) d\right) ^{1/2}%
+}{6d},T<T_{c}$
+
+$S=-\frac{da\left( T\right) }{dT},T>T_{c},$
+
+$T\rightarrow T_{c}-,S\rightarrow -\frac{da\left( T\right) }{dT}%
+_{|T\rightarrow T_{c}-}+\frac{4cb}{9d}$
+
+\bigskip $T\rightarrow T_{c}+,S\rightarrow -\frac{da\left( T\right) }{dT}%
+_{|T\rightarrow T_{c}+}$\bigskip ,熵在$T_{c}$处不%
+连续,因此这一体系有%
+一级相变
+
+由低温相转变为高温%
+相对应的相变潜热$%
+L=T_{c}\left( S\left( T_{c}+\right) -S\left( T_{c}-\right) \right) $
+
+$=\frac{4cb}{9d}T_{c}.$
+
+7.6 已经解出 $lnZ=N\ln \left( e^{\beta \mu _{0}\mu 
+\overline{H}}+e^{-\beta \mu _{0}\mu \overline{H}}\right) ,$在没%
+有外加磁场的情况下$%
+T>T_{c},$无自发磁化总磁矩$%
+m=N\mu \overline{S}=0;\overline{S}$为平均自旋%
+量子数,可看成相变的%
+序参量.
+
+$\ln Z=C\implies E=0,C_{v}=0$
+
+$T<T_{c},$有自发磁化,由近临%
+相互作用产生的等效%
+磁场为$\mu _{0}\mu \overline{H}=z\epsilon \overline{S},$%
+其中$z$表示任一格点近%
+临格点数$\implies \ln Z=N\ln \left( e^{\beta
+z\epsilon \overline{S}}+e^{-\beta z\epsilon \overline{S}}\right) ,\implies
+E=-\frac{\partial \ln Z}{\partial \beta }$
+
+$=-\frac{\partial \ln Z}{\partial \beta }=-Nz\epsilon \overline{S}\tanh
+\beta z\epsilon \overline{S}\implies $由推导$T_{c}$的%
+过程已经求得$\overline{S}$满%
+足如下超越方程
+
+$\overline{S}=\tanh \frac{z\epsilon }{kT}\overline{S}\implies \frac{%
+z\epsilon }{kT}\overline{S}=\frac{1}{2}\ln \frac{1+\overline{S}}{1-\overline{%
+S}},$记$t^{\prime }=1-\frac{T}{T_{c}},$则$T=T_{c}\left(
+1-t^{\prime }\right) $
+
+$=\frac{z\epsilon }{k}\left( 1-t^{\prime }\right) $
+
+$\implies \overline{S}=\frac{1}{2}\left( 1-t^{\prime }\right) \ln \frac{1+%
+\overline{S}}{1-\overline{S}},\overline{S}\rightarrow 0,as$ $t^{\prime
+}\rightarrow 0^{-},$在$t^{\prime }=0$附近将
+
+$\ln \frac{1+\overline{S}}{1-\overline{S}}$展开并略%
+去3阶以上的项$\implies \overline{S}%
+=\left( 1-t^{\prime }\right) \left( \overline{S}+\frac{\overline{S}^{3}}{3}%
+\right) \implies \overline{S}^{2}=\frac{3t^{\prime }}{1-t^{\prime }}\approx
+3t^{\prime }$
+
+$E=-Nz\epsilon \overline{S}^{2}=-3Nz\epsilon t^{\prime }\implies C_{v}=\frac{%
+\partial E}{\partial T}=\frac{3Nz\epsilon }{T_{c}},$近似为%
+常数,$\implies C_{v}$ 对应的指数$%
+\alpha =0.$
+
+在$T_{c}$处序参量$\overline{S}=0,\mu _{0}\mu 
+\overline{H}=z\epsilon \overline{S}\propto \sqrt{3t^{\prime }}\implies 
+\overline{H}\propto t^{^{\prime }\frac{1}{2}}\implies $临界%
+磁化强度对应的临界%
+指数$\beta =\frac{1}{2}.$
+
+在附加外场的情况下%
+磁介质的磁化率$\chi =\frac{%
+\partial M}{\partial B},$其中$M=\frac{m}{N}=\mu \overline{S},$%
+而
+
+$B=\mu _{0}H\implies \chi =\frac{\partial M}{\partial B}=\frac{\mu }{\mu _{0}%
+}\frac{\partial \overline{S}}{\partial H}$
+
+为磁化强度
+
+此时$H_{total}=H+\frac{z\epsilon }{\mu _{0}\mu }\overline{S},$%
+而$\overline{S}$满足的方程为$%
+\overline{S}=\tanh \frac{\mu _{0}\mu H_{total}}{kT}$
+
+$\implies \overline{S}=\tanh \frac{\mu _{0}\mu H+z\epsilon \overline{S}}{kT}%
+\implies \mu _{0}\mu H=kT\tanh ^{-1}\overline{S}-z\epsilon \overline{S}%
+\implies $
+
+$\mu _{0}\mu dH=\left( \frac{kT}{1-\overline{S}^{2}}-z\epsilon \right) d%
+\overline{S}\implies \frac{d\overline{S}}{dH}=\frac{\mu _{0}\mu }{\frac{kT}{%
+1-\overline{S}^{2}}-z\epsilon },$对$T\rightarrow T_{c}-,$
+
+可代入前面推导的结%
+果$T=T_{c}\left( 1-t^{\prime }\right) ,\overline{S}^{2}=3t^{\prime }$
+
+$\implies \frac{d\overline{S}}{dH}=\frac{\mu _{0}\mu }{\frac{kT_{c}\left(
+1-t^{\prime }\right) }{1-3t^{\prime }}-kT_{c}}=\frac{\mu _{0}\mu }{kT_{c}}%
+\frac{1-3t^{\prime }}{2t^{\prime }}\approx \frac{\mu _{0}\mu }{kT_{c}}\frac{1%
+}{2t^{\prime }}\propto \frac{1}{t^{\prime }},$同理可%
+讨论$T\rightarrow T_{c}+$有$\chi \propto \frac{1}{%
+-t^{\prime }}\implies $临界磁化率对%
+应的
+
+临界指数$\gamma =1.$
+
+\bigskip 为求临界磁场对应%
+的临界指数$\delta ,$
+
+仍考虑由Bragg-Williams Method 给出%
+的物态方程$\overline{S}=\tanh \frac{\mu
+_{0}\mu H+z\epsilon \overline{S}}{kT},\mu \overline{S}=M,$
+
+即$\overline{S}$与$M$只差一个常%
+数$,$代入$T=T_{c}\left( 1-t^{\prime }\right) $整%
+理后有$\qquad \left( 1-t^{\prime }\right) \tanh ^{-1}%
+\overline{S}=\frac{\mu _{0}\mu H}{kT_{c}}+\overline{S}$
+
+$\tanh ^{-1}\overline{S}$在$t^{\prime }=0$处展开%
+并忽略3阶以上的项得
+
+$\left( 1-t^{\prime }\right) \left( \overline{S}+\frac{1}{3}\overline{S}%
+^{3}\right) =\frac{\mu _{0}\mu H}{kT_{c}}+\overline{S},$在临%
+界温度处$t^{\prime }=0,$此时物%
+态方程化为
+
+$\frac{1}{3}\overline{S}^{3}=\frac{\mu _{0}\mu H}{kT_{c}}\implies H\propto
+M^{3}\implies \delta =3.$
+
+
+\end{document}

@@ -1,0 +1,205 @@
+
+\documentclass{ctexart}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath}
+
+
+\setcounter{MaxMatrixCols}{10}
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.00.0.2552}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{Created=Thursday, October 15, 2015 23:40:56}
+%TCIDATA{LastRevised=Sunday, October 18, 2015 20:56:23}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Scientific Notebook\Blank Document">}
+%TCIDATA{CSTFile=Math with theorems suppressed.cst}
+%TCIDATA{PageSetup=72,72,72,72,0}
+%TCIDATA{AllPages=
+%F=36,\PARA{038<p type="texpara" tag="Body Text" >\hfill \thepage}
+%}
+
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+
+
+\begin{document}
+
+
+
+\bigskip 统力第四周作业 \qquad 
+赵丰\qquad 2013012178
+
+\bigskip \bigskip 统力第五周第二%
+次作业 \qquad 赵丰\qquad 2013012178
+
+\bigskip 
+
+
+因$\epsilon _{2}>>\epsilon _{1}$,故体系不%
+存在能级的简并,partition function 
+由下式给出
+
+$Z=\underset{i}{\sum }e^{\beta E_{i}},$若我们假%
+设粒子是可分辨的,则N%
+个粒子的微观态分布%
+为独立同分布,其联合%
+微观态的分布等于单%
+一分布的N次方,即有\qquad $%
+Z=\left( 1+e^{-\beta \epsilon _{1}}+e^{-\beta \epsilon _{2}}\right) ^{N}.$
+
+Helmholtz自由能为\qquad $F=-kT\ln Z=-kTN\ln \left(
+1+e^{-\beta \epsilon _{1}}+e^{-\beta \epsilon _{2}}\right) $
+
+而系统的熵为\qquad $S=k\left[ \ln
+Z-\beta \frac{\partial \ln Z}{\partial \beta }\right] =Nk\left[ \ln \left(
+1+e^{-\beta \epsilon _{1}}+e^{-\beta \epsilon _{2}}\right) +\frac{\beta
+\epsilon _{1}e^{-\beta \epsilon _{1}}+\beta \epsilon _{2}e^{-\beta \epsilon
+_{2}}}{1+e^{-\beta \epsilon _{1}}+e^{-\beta \epsilon _{2}}}\right] $
+
+$\left( 1\right) kT<<\epsilon _{2},$即$\beta \epsilon _{2}>>1,F\approx
+-kTN\ln \left( 1+e^{-\beta \epsilon _{1}}\right) $
+
+$S\approx Nk\left[ \ln \left( 1+e^{-\beta \epsilon _{1}}\right) +\frac{\beta
+\epsilon _{1}e^{-\beta \epsilon _{1}}}{1+e^{-\beta \epsilon _{1}}}\right] $
+
+\bigskip $\left( 2\right) kT>>\epsilon _{1},即 \beta \epsilon
+_{1}<<1,F\approx -kTN\ln \left( 2-\beta \epsilon _{1}+e^{-\beta \epsilon
+_{2}}\right) $
+
+$S\approx Nk\left[ \ln \left( 2-\beta \epsilon _{1}+e^{-\beta \epsilon
+_{2}}\right) +\frac{\beta \epsilon _{1}+\beta \epsilon _{2}e^{-\beta
+\epsilon _{2}}}{2-\beta \epsilon _{1}+e^{-\beta \epsilon _{2}}}\right] $
+
+\bigskip
+
+\bigskip 若用grand canonical ensemble$\left( T,\mu
+,V=Const\right) :$
+
+巨热力学势$\Xi =\underset{N=0}{\overset{\infty 
+}{\sum }}e^{-\alpha N}Z\left( N\right) =\underset{n=0}{\overset{\infty }{%
+\sum }}e^{-\alpha N}\left( 1+e^{-\beta \epsilon _{1}}+e^{-\beta \epsilon
+_{2}}\right) ^{N}=\frac{1}{1-e^{-\alpha }\left( 1+e^{-\beta \epsilon
+_{1}}+e^{-\beta \epsilon _{2}}\right) }.$
+
+平均粒子数$\overline{N}=-\left( \frac{\partial
+\ln \Xi }{\partial \alpha }\right) _{T,V}=\frac{\partial \ln \left(
+1-e^{-\alpha }\left( 1+e^{-\beta \epsilon _{1}}+e^{-\beta \epsilon
+_{2}}\right) \right) }{\partial \alpha }=\allowbreak \frac{e^{-\alpha
+}\left( 1+e^{-\beta \epsilon _{1}}+e^{-\beta \epsilon _{2}}\right) }{%
+1-e^{-\alpha }\left( 1+e^{-\beta \epsilon _{1}}+e^{-\beta \epsilon
+_{2}}\right) }\allowbreak \allowbreak .\left( \text{we require chemical
+potential should take such value that gives }\overline{N}=N\right) $
+
+从上式解得$e^{-\alpha }=\frac{\overline{N}}{%
+\overline{N}+1}\left( 1+e^{-\beta \epsilon _{1}}+e^{-\beta \epsilon
+_{2}}\right) ^{-1}.$由巨正则分布的%
+热力学公式知
+
+$E_{G}=-\left( \frac{\partial \ln \Xi }{\partial \beta }\right) _{V,\alpha
+},E_{G}=\frac{\partial \ln \left( 1-e^{-\alpha }\left( 1+e^{-\beta \epsilon
+_{1}}+e^{-\beta \epsilon _{2}}\right) \right) }{\partial \beta }=\allowbreak 
+\frac{e^{-\alpha }\left( \epsilon _{1}e^{-\beta \epsilon _{1}}+\epsilon
+_{2}e^{-\beta \epsilon _{2}}\right) }{1-e^{-\alpha }\left( 1+e^{-\beta
+\epsilon _{1}}+e^{-\beta \epsilon _{2}}\right) }\allowbreak \allowbreak =%
+\frac{\overline{N}\left( \epsilon _{1}e^{-\beta \epsilon _{1}}+\epsilon
+_{2}e^{-\beta \epsilon _{2}}\right) }{\left( 1+e^{-\beta \epsilon
+_{1}}+e^{-\beta \epsilon _{2}}\right) },$
+
+If we calculate $E_{C}$ from canonical ensemble formula $E_{C}=-\frac{%
+\partial \ln Z}{\partial \beta },$we get the same result,i.e.$%
+E_{G}\allowbreak =E_{C}.$
+
+$S_{G}=k\left( \beta E_{G}+\alpha \overline{N}+\ln \Xi \right) =k\overline{N}%
+\left( \frac{\beta \left( \epsilon _{1}e^{-\beta \epsilon _{1}}+\epsilon
+_{2}e^{-\beta \epsilon _{2}}\right) }{1+e^{-\beta \epsilon _{1}}+e^{-\beta
+\epsilon _{2}}}+\ln \frac{\overline{N}+1}{\overline{N}}\left( 1+e^{-\beta
+\epsilon _{1}}+e^{-\beta \epsilon _{2}}\right) \right) +k\ln \left( 
+\overline{N}+1\right) $
+
+$S_{G}-S=k\overline{N}\left( \frac{\beta \left( \epsilon _{1}e^{-\beta
+\epsilon _{1}}+\epsilon _{2}e^{-\beta \epsilon _{2}}\right) }{1+e^{-\beta
+\epsilon _{1}}+e^{-\beta \epsilon _{2}}}+\ln \frac{\overline{N}+1}{\overline{%
+N}}\left( 1+e^{-\beta \epsilon _{1}}+e^{-\beta \epsilon _{2}}\right) \right)
++k\ln \left( \overline{N}+1\right) $
+
+-$Nk\left[ \ln \left( 1+e^{-\beta \epsilon _{1}}+e^{-\beta \epsilon
+_{2}}\right) +\frac{\beta \epsilon _{1}e^{-\beta \epsilon _{1}}+\beta
+\epsilon _{2}e^{-\beta \epsilon _{2}}}{1+e^{-\beta \epsilon _{1}}+e^{-\beta
+\epsilon _{2}}}\right] =k\overline{N}\ln \frac{\overline{N}+1}{\overline{N}}%
++k\ln \left( \overline{N}+1\right) $,which is small compared with $\ln N$
+
+if N is very large.
+
+玻色子的有：12C atom, 4He atom, alpha
+particle, H2 molecule
+
+费米子的有：13C atom, H- ion(proton),3He
+atom, 6Li- ion, e+
+
+
+1.设系统的两个能级分%
+别为$\epsilon _{1},\epsilon _{2},$系统按%
+能量的分布为以下5种%
+情况,$\left( \epsilon _{1},\epsilon _{2}\right) =\left(
+4,0\right) ,\left( 3,1\right) ,\left( 2,2\right) ,\left( 1,3\right) ,\left(
+0,4\right) $
+
+其分别对应的微观状%
+态数分别为1,16,36,16,1.$\left( \epsilon
+_{1},\epsilon _{2}\right) =\left( 2,2\right) $出现的%
+概率最大,因为其对应%
+的微观状态数最多.
+
+\begin{tabular}{llllll}
+$\left( \epsilon _{1},\epsilon _{2}\right) $ & $\left( 4,0\right) $ & $%
+\left( 3,1\right) $ & $\left( 2,2\right) $ & $\left( 1,3\right) $ & $\left(
+0,4\right) $ \\ 
+$P$ & $\frac{1}{70}$ & $\frac{8}{35}$ & $\frac{18}{35}$ & $\frac{8}{35}$ & $%
+\frac{1}{70}$%
+\end{tabular}
+
+2.若对于玻色子,则以上5%
+种宏观态对应的微观%
+状态数分别为$\binom{7}{4}=\allowbreak 35$%
+,80,100,80,35.$\left( \epsilon _{1},\epsilon _{2}\right) =\left( 2,2\right) $%
+出现的概率最大.
+
+
+$\left( 1\right) $由半经典分布公%
+式知处于$\epsilon _{i}$能级的%
+粒子数为$a_{i}=\omega _{i}e^{-\alpha -\beta \epsilon
+_{i}},$故$\frac{a_{1}}{a_{0}}=e^{-\beta hv}$
+
+$=e^{-\frac{hv}{kT}}=\exp \left( -\frac{0.3\times 1.6\times 10^{-19}}{%
+1.38\times 10^{-23}\times 1000}\right) =\allowbreak 3.\,\allowbreak
+086\,1\%. $
+
+
+$\left( 2\right) $同上题$\frac{a_{1}}{a_{0}}=3e^{-\beta
+\left( \epsilon _{1}-\epsilon _{0}\right) }=3\times \exp \left( -\frac{%
+19.82\times 1.6\times 10^{-19}}{1.38\times 10^{-23}\times 1000}\right)
+=\allowbreak 4.\,\allowbreak 758\,9\times 10^{-100}.$
+
+
+\end{document}
